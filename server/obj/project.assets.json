@@ -465,11 +465,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\nackademin\\teknikfördjupning\\OrderManagementApp\\Server\\Server.csproj",
-      "projectName": "Server",
-      "projectPath": "C:\\nackademin\\teknikfördjupning\\OrderManagementApp\\Server\\Server.csproj",
+      "projectUniqueName": "C:\\nackademin\\teknikfördjupning\\OrderManagementApp\\server\\server.csproj",
+      "projectName": "server",
+      "projectPath": "C:\\nackademin\\teknikfördjupning\\OrderManagementApp\\server\\server.csproj",
       "packagesPath": "C:\\Users\\Musse\\.nuget\\packages\\",
-      "outputPath": "C:\\nackademin\\teknikfördjupning\\OrderManagementApp\\Server\\obj\\",
+      "outputPath": "C:\\nackademin\\teknikfördjupning\\OrderManagementApp\\server\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Musse\\AppData\\Roaming\\NuGet\\NuGet.Config",

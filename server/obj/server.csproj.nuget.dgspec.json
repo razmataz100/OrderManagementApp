@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Nackademin\\Teknikfördjupning\\OrderManagementApp\\Server\\Server.csproj": {}
+    "C:\\nackademin\\teknikfördjupning\\OrderManagementApp\\server\\server.csproj": {}
   },
   "projects": {
-    "C:\\Nackademin\\Teknikfördjupning\\OrderManagementApp\\Server\\Server.csproj": {
+    "C:\\nackademin\\teknikfördjupning\\OrderManagementApp\\server\\server.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Nackademin\\Teknikfördjupning\\OrderManagementApp\\Server\\Server.csproj",
-        "projectName": "Server",
-        "projectPath": "C:\\Nackademin\\Teknikfördjupning\\OrderManagementApp\\Server\\Server.csproj",
+        "projectUniqueName": "C:\\nackademin\\teknikfördjupning\\OrderManagementApp\\server\\server.csproj",
+        "projectName": "server",
+        "projectPath": "C:\\nackademin\\teknikfördjupning\\OrderManagementApp\\server\\server.csproj",
         "packagesPath": "C:\\Users\\Musse\\.nuget\\packages\\",
-        "outputPath": "C:\\Nackademin\\Teknikfördjupning\\OrderManagementApp\\Server\\obj\\",
+        "outputPath": "C:\\nackademin\\teknikfördjupning\\OrderManagementApp\\server\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Musse\\AppData\\Roaming\\NuGet\\NuGet.Config",
