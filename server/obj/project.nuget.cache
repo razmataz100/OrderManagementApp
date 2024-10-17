@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "TBqWOYjQt6vXAt2WaICM7EfMyaoUCCxeMz09C0lM3H0MwcuKLGOhi9tnygYbFGfUEIu9LC0AIpaAe5FB6au7qQ==",
+  "dgSpecHash": "rzs7auByDNCoIdDotHP8jS0dgj7SBR8ymV9sTHfAYzCVhiyeu7bKHaBHVoagaDy3XikaLu/lW5AhaYRUku6SVw==",
   "success": true,
-  "projectFilePath": "C:\\Nackademin\\Teknikfördjupning\\OrderManagementApp\\server\\server.csproj",
+  "projectFilePath": "C:\\Nackademin\\Teknikfördjupning\\OrderManagementApp\\Server\\Server.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Musse\\.nuget\\packages\\microsoft.aspnetcore.openapi\\8.0.1\\microsoft.aspnetcore.openapi.8.0.1.nupkg.sha512",
     "C:\\Users\\Musse\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
