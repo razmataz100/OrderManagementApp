@@ -8,7 +8,7 @@ const CustomerPage = () => {
   const [selectedCustomer, setSelectedCustomer] = useState(null);
   const [orderDetails, setOrderDetails] = useState([]);
   const navigate = useNavigate();
-  const apiUrl = process.env.REACT_APP_API_URL;
+  const apiUrl = "http://localhost:5046";
 
   useEffect(() => {
     const fetchCustomers = async () => {

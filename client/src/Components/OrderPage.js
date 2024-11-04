@@ -11,7 +11,7 @@ const OrderPage = () => {
   const [email, setEmail] = useState('');
   const [name, setName] = useState('');
   const navigate = useNavigate();
-  const apiUrl = process.env.REACT_APP_API_URL; 
+  const apiUrl = "http://localhost:5046"; 
 
   useEffect(() => {
     fetchOrders(); 

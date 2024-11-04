@@ -8,7 +8,7 @@ const InventoryPage = () => {
   const [searchParams, setSearchParams] = useState({ isbn: '', title: '', author: '', year: '' });
   const [message, setMessage] = useState('');
   const navigate = useNavigate();
-  const apiUrl = process.env.REACT_APP_API_URL;
+  const apiUrl = "http://localhost:5046";
 
   useEffect(() => {
     fetchBooks();

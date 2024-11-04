@@ -7,7 +7,7 @@ const AddOrdersPage = () => {
     const [orderItems, setOrderItems] = useState([{ bookId: '', quantity: 1 }]); 
     const [errorMessage, setErrorMessage] = useState('');
     const navigate = useNavigate();
-    const apiUrl = process.env.REACT_APP_API_URL;
+    const apiUrl = "http://localhost:5046";
 
     const handleChangeCustomerId = (e) => {
         setCustomerId(e.target.value);

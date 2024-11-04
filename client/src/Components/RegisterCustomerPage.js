@@ -8,7 +8,7 @@ const RegisterCustomerPage = () => {
   const [message, setMessage] = useState('');
   const [isSuccess, setIsSuccess] = useState(false);
   const navigate = useNavigate();
-  const apiUrl = process.env.REACT_APP_API_URL;
+  const apiUrl = "http://localhost:5046";
 
   const handleSubmit = async (e) => {
     e.preventDefault();
