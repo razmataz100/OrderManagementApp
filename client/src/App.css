@@ -36,3 +36,11 @@
     transform: rotate(360deg);
   }
 }
+
+/* Main container that fills and centers the page */
+body, html {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

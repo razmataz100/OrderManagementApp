@@ -17,9 +17,8 @@ namespace OrderManagementApp.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            // Set Id as primary key and auto-increment
             modelBuilder.Entity<OrderItem>()
-                .HasKey(oi => oi.Id); // Single primary key
+                .HasKey(oi => oi.Id);
 
             modelBuilder.Entity<OrderItem>()
                 .HasOne(oi => oi.Book)
@@ -33,9 +32,8 @@ namespace OrderManagementApp.Data
 
             modelBuilder.Entity<Book>()
                 .Property(b => b.Price)
-                .HasColumnType("decimal(18,2)"); // Adjust precision and scale as needed
+                .HasColumnType("decimal(18,2)"); 
 
-            // Ensure Id is auto-incremented
             modelBuilder.Entity<OrderItem>()
                 .Property(oi => oi.Id)
                 .ValueGeneratedOnAdd();

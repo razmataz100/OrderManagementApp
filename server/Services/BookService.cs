@@ -23,28 +23,24 @@ namespace OrderManagementApp.Services
 
         public async Task<Book> AddBookAsync(Book book)
         {
-            // Set the Id to 0 here to ensure it's treated as a new entity
             book.Id = 0;
 
-            // Check if the book already exists in the database
             var existingBook = await _context.Books
                 .FirstOrDefaultAsync(b => b.ISBN == book.ISBN);
 
             if (existingBook != null)
             {
-                // If it exists, update the quantity
-                existingBook.Stock  += book.Stock ; // Add the quantity from the incoming book
+                existingBook.Stock  += book.Stock ;
                 _context.Books.Update(existingBook);
             }
             else
             {
-                // If it doesn't exist, add it as a new book
                 _context.Books.Add(book);
             }
 
             await _context.SaveChangesAsync();
 
-            return existingBook ?? book; // Return the existing book or the newly added book
+            return existingBook ?? book; 
         }
 
 

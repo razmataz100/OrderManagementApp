@@ -1,24 +1,30 @@
-import logo from './logo.svg';
+// src/App.js
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import LandingPage from './Components/LandingPage';
+import CustomerPage from './Components/CustomerPage';
+import RegisterCustomerPage from './Components/RegisterCustomerPage';
+import InventoryPage from './Components/InventoryPage';
+import OrderPage from './Components/OrderPage';
+import AddOrderPage from './Components/AddOrderPage';
+import AddBookPage from './Components/AddBookPage';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<LandingPage />} />
+          <Route path="/customers" element={<CustomerPage />} />
+          <Route path="/register" element={<RegisterCustomerPage />} />
+          <Route path="/inventory" element={<InventoryPage />} />
+          <Route path="/orders" element={<OrderPage />} />
+          <Route path="/add-order" element={<AddOrderPage />} />
+          <Route path="/add-book" element={<AddBookPage />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 

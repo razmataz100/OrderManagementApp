@@ -5,7 +5,6 @@ using System.Threading.Tasks;
 using OrderManagementApp.Models.Entities;
 using OrderManagementApp.Services;
 
-
 namespace OrderManagementApp.Controllers
 {
     [Route("api/[controller]")]
@@ -19,30 +18,18 @@ namespace OrderManagementApp.Controllers
             _bookService = bookService;
         }
 
-
         [HttpPost("addbooks")]
-        public async Task<ActionResult<IEnumerable<Book>>> AddBooks([FromBody] List<AddBooksDTO> books)
+        public async Task<ActionResult<Book>> AddBooks([FromBody] Book book)
         {
-            if (books == null || !books.Any() || !ModelState.IsValid)
+            if (book == null || !ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
 
-            var addedBooks = new List<Book>();
-
-            foreach (var bookDto in books)
-            {
-                // Update the quantity in the Book object before adding
-                bookDto.Book.Stock = bookDto.Quantity;
-
-                // Add the book (this will handle updating quantity if it already exists)
-                var addedBook = await _bookService.AddBookAsync(bookDto.Book);
-                addedBooks.Add(addedBook);
-            }
-
-            return CreatedAtAction(nameof(AddBooks), addedBooks);
+            var addedBook = await _bookService.AddBookAsync(book);
+            
+            return CreatedAtAction(nameof(AddBooks), addedBook);
         }
-
 
         [HttpGet("search")]
         public async Task<ActionResult<IEnumerable<Book>>> SearchBooks(string? isbn, string? title, string? author, int? year)
@@ -59,10 +46,9 @@ namespace OrderManagementApp.Controllers
         }
 
         [HttpGet("test")]
-public IActionResult Test()
-{
-    return Ok("Controller is working!");
-}
-
+        public IActionResult Test()
+        {
+            return Ok("Controller is working!");
+        }
     }
 }
