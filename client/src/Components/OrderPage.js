@@ -11,7 +11,7 @@ const OrderPage = () => {
   const [email, setEmail] = useState('');
   const [name, setName] = useState('');
   const navigate = useNavigate();
-  const apiUrl = "http://localhost:5046"; 
+  const apiUrl = "https://ordermanagementapi.azurewebsites.net";
 
   useEffect(() => {
     fetchOrders(); 

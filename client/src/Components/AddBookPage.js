@@ -14,7 +14,7 @@ const AddBookPage = () => {
     const [quantity, setQuantity] = useState('');
     const [errorMessage, setErrorMessage] = useState('');
     const navigate = useNavigate();
-    const apiUrl = "http://localhost:5046";
+    const apiUrl = "https://ordermanagementapi.azurewebsites.net";
 
     const handleChange = (e) => {
         const { name, value } = e.target;

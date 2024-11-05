@@ -8,7 +8,7 @@ const RegisterCustomerPage = () => {
   const [message, setMessage] = useState('');
   const [isSuccess, setIsSuccess] = useState(false);
   const navigate = useNavigate();
-  const apiUrl = "http://localhost:5046";
+  const apiUrl = "https://ordermanagementapi.azurewebsites.net";
 
   const handleSubmit = async (e) => {
     e.preventDefault();
