@@ -1,10 +1,9 @@
-/* Style for the main container similar to the landing page */
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: auto; /* Allow it to expand based on content */
+  height: auto;
   max-width: 400px;
   margin: 0 auto;
   padding: 2rem;
@@ -13,14 +12,13 @@
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   margin-top: 50px;
-  position: relative; /* Ensure positioning context for absolute children */
+  position: relative;
 }
 
-/* Style for the back button */
 .back-button {
   width: 70px;
   font-size: 1rem;
-  background-color: grey; /* Back button color */
+  background-color: grey;
   color: white;
   cursor: pointer;
   border-radius: 8px;
@@ -28,15 +26,13 @@
   margin-right: 300px;
 }
 
-/* Hover effect for the back button */
 .back-button:hover {
-  background-color: #d32f2f; /* Change color on hover */
+  background-color: #d32f2f;
 }
 
-/* Scrollable box for the customer list */
 .scrollable-box {
   width: 100%;
-  max-height: 200px; /* Set height to make it scrollable */
+  max-height: 200px;
   overflow-y: auto;
   padding: 1rem;
   border: 1px solid #ddd;
@@ -44,7 +40,6 @@
   margin-top: 1rem;
 }
 
-/* Style each customer item */
 .scrollable-box ul {
   list-style-type: none;
   padding: 0;
@@ -54,21 +49,18 @@
 .scrollable-box li {
   padding: 0.5rem 0;
   border-bottom: 1px solid #eee;
-  cursor: pointer; /* Indicate that items are clickable */
+  cursor: pointer;
 }
 
-/* Remove border for the last item */
 .scrollable-box li:last-child {
   border-bottom: none;
 }
 
-/* Highlight selected customer */
 .scrollable-box li.selected {
-  background-color: #e0f7fa; /* Change to your desired color */
-  color: #00695c; /* Change text color if needed */
+  background-color: #e0f7fa;
+  color: #00695c;
 }
 
-/* Button container with spacing between buttons */
 .button-container {
   display: flex;
   flex-direction: column;
@@ -76,25 +68,23 @@
   margin-top: 2rem;
 }
 
-/* Style for individual buttons */
 .button {
   padding: 1rem 2rem;
   font-size: 1.2rem;
   cursor: pointer;
   border-radius: 8px;
   border: none;
-  background-color: #4caf50; /* Light green color */
+  background-color: #4caf50;
   color: #fff;
   transition: background-color 0.3s;
 }
 
-/* Hover effect for buttons */
 .button:hover {
   background-color: #45a049;
 }
 
 .message {
   margin: 10px 0;
-  color: green; /* Change to red for error messages */
+  color: green;
   font-weight: bold;
 }

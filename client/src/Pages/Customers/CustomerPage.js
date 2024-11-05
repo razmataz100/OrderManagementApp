@@ -21,7 +21,7 @@ const CustomerPage = () => {
         setCustomers(data);
       } catch (error) {
         console.error("Failed to fetch customers:", error);
-      } finally {
+      } finally { 
         setLoading(false);
       }
     };
