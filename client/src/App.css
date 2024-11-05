@@ -37,7 +37,6 @@
   }
 }
 
-/* Main container that fills and centers the page */
 body, html {
   height: 100%;
   display: flex;

@@ -1,13 +1,13 @@
 // src/App.js
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import LandingPage from './Components/LandingPage';
-import CustomerPage from './Components/CustomerPage';
-import RegisterCustomerPage from './Components/RegisterCustomerPage';
-import InventoryPage from './Components/InventoryPage';
-import OrderPage from './Components/OrderPage';
-import AddOrderPage from './Components/AddOrderPage';
-import AddBookPage from './Components/AddBookPage';
+import LandingPage from './Pages/Home/LandingPage';
+import CustomerPage from './Pages/Customers/CustomerPage';
+import RegisterCustomerPage from './Pages/Customers/RegisterCustomerPage';
+import InventoryPage from './Pages/Inventory/InventoryPage';
+import OrderPage from './Pages/Orders/OrderPage';
+import AddOrderPage from './Pages/Orders//AddOrders/AddOrderPage';
+import AddBookPage from './Pages/Inventory/AddBooks/AddBookPage';
 import './App.css';
 
 function App() {
