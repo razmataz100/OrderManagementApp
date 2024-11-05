@@ -7,7 +7,7 @@ const AddOrdersPage = () => {
     const [orderItems, setOrderItems] = useState([{ bookId: '', quantity: 1 }]); 
     const [errorMessage, setErrorMessage] = useState('');
     const navigate = useNavigate();
-    const apiUrl = "http://localhost:5046";
+    const apiUrl = "https://ordermanagementapi.azurewebsites.net";
 
     const handleChangeCustomerId = (e) => {
         setCustomerId(e.target.value);

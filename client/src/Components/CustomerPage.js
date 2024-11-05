@@ -8,7 +8,7 @@ const CustomerPage = () => {
   const [selectedCustomer, setSelectedCustomer] = useState(null);
   const [orderDetails, setOrderDetails] = useState([]);
   const navigate = useNavigate();
-  const apiUrl = "http://localhost:5046";
+  const apiUrl = "https://ordermanagementapi.azurewebsites.net";
 
   useEffect(() => {
     const fetchCustomers = async () => {
