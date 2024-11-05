@@ -22,7 +22,7 @@ builder.Services.AddCors(options =>
     options.AddPolicy("AllowFrontend",
         builder =>
         {
-            builder.WithOrigins("http://localhost:3000", "https://ordermanagementweb.azurewebsites.net")
+            builder.WithOrigins("http://localhost:3000", "https://ordermanagementweb.azurewebsites.net", "https://ordermanagementapp.azurewebsites.net")
                    .AllowAnyMethod()
                    .AllowAnyHeader();
         });
